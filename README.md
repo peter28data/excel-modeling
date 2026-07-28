@@ -8,3 +8,7 @@ Identifying Questions to Answer Data Analysis.
 
 ---
 
+## =FILTER()
+
+Filter by Region
+
