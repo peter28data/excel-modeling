@@ -22,6 +22,14 @@ Identifying Questions to Answer Data Analysis.
 
 ---
 
+- What is the Total Sales in the U.K. for Eclairs Product?
+- SumIf
+  
+- How many of those sales came from the Sales Person "Oby Sorrel"?
+- Countif
+  
+---
+
 ## Power BI Dashboard
 
 ---
