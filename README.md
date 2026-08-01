@@ -1,34 +1,38 @@
-## Business Problem - Marketing Analytics
+<h1 align="center">Peter Garay-Robles </h1>
 
-Identifying Questions to Answer Data Analysis.
+<h3 align="center">A Data Engineer in SQL and Excel. </h3>
 
-1. Who are My Best Customers?
-2. Who Needs a Retention Campaign?
-3. Which Segments are Safe to ignore?
+----
+
+
+## Excel Data Pipeline & Analytics Framework
+
+A Structured Suite of 10 Advanced Excel Functions Designed to Automate Data Cleaning, Deduplicate Records, and Summarize KPI's by Region Dynamically.
 
 ---
-### Excel
-###  =FILTER()
 
-1. Filter by UK Region
+## 1. Excel FILTER Function
+
+Utilize to Extract UK-specific Records, Displaying a Dynamic Subset Containing Salesperson, Product, Boxes Shipped, and Financial Amount.
+
+- Filter by UK Region
 
 ---
 
 ![excel filter function](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/excel_filter_function.png)
 
-2. Result of FILTER Function
+- Result of FILTER Function
 
 ![excel modeling result](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/excel_filter_result.png)
-
-3. Filter for UK Sales over 100
-
-![Excel FILTER Function over100](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_filter_over100_result.png)
 
 
 ---
 
-- What is the Total Sales in the U.K. for Eclairs Product?
-- SumIf
+## 2. Excel SUMIFS Function
+
+Utilize to Implement Automated Financial Aggregation By Region and Unique Product.
+
+- Find The Total Sales in the U.K. for Eclairs Product.
 
 ---
 
@@ -36,37 +40,51 @@ Identifying Questions to Answer Data Analysis.
 
 ---
 
+## 3. Excel COUNTIFS Function
+
+Utilize to Segment Sales Record to Isolate Salesperson.
+
 - How many of those sales came from the Sales Person "Oby Sorrel"?
-- Countif
 
 ![Excel COUNTIF Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_countifs_function.png)
 
 ---
 
-## Excel XLOOKUP Function
+## 4. Excel XLOOKUP Function
 
+Utilize for Dynamic Indexing and Retrieval.
+
+- Return Matching Product Identifier Based on Product Details
 
 ![excel xlookup function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_xlookup_function_v1.png)
 
 ---
 
-## Excel UNIQUE Function
+## 5. Excel UNIQUE Function
 
-Utilize to Remove Duplicates to Find Unique Customers or Products.
+Utilize to Eliminate Redundant Transaction IDs to isolate distinct Customer Records. The system Performs Automated Data Deduplication.
+
+-Remove Duplicates to Find Unique Customers or Products.
 
 ![Excel Unique Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_unique_function.png)
 
 ---
 
-## Excel SORT Function
+## 6. Excel SORT Function
 
-Utilize to Arrange Data by Category.
+Utilize to Dynamically Sort Records in Ascending Alphabetical Order by Client Surname
+
+-Arrange Data by Category.
 
 ![Excel SORT Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_sort_function.png)
 
-![Excel SORT Result](modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_sort_result.png)
+![Excel SORT Result](https://github.com/peter28data/excel-modeling/blob/1cc0eef2594347b6267b812eaeed5728c2dd59a0/images_excel_modeling/v1/excel_sort_result.png)
 
 ---
+
+## 7. Excel PROPER Function
+
+Utilize to Standardize Capitalization for Client Lists.
 
 ![Excel Proper Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_proper_function.png)
 
@@ -74,55 +92,63 @@ Utilize to Arrange Data by Category.
 
 ---
 
-## Excel LET Function
+## 8. Excel LET Function
 
-Utilize to save results of Functions as Variables and Return a Summary with Dynamic KPI's.
+Implement Automated Summary reporting the Total Financial Performance of the UK Region and Average Order Size.
 
 ![Excel LET Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_let_function.png)
 
 ---
 
-## Excel IFS Function
+## 9. Excel IFS Function
 
-Utilize to Set Multiple Conditions and Return Result, Good for Creating new Category column and Labeling Customer or Employee Records.
+To Evaluate Box Volumes Shipped, The IFS function is utilized for Multi-Conditional Classification.
+
+Good for Labeling Performance of Customer or Employee Records.
 
 ![Excel IFS Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_ifs_function.png)
 
 ---
 
-# Excel Descriptive Statistics
+# 10. Excel Descriptive Statistics
 
-Utilize when Required to show the Statistics of Revenue or Numerical Data to Analyze Min/Max, Standard Deviation, and Median.
+Display Statistical Parameters for Amount Sold and Boxes Shipped such as Measures of Central Tendency (Mean & Median), Spread (Standard Deviation, Variance, Min & Max Range) To Measure Volatility of Sales Sizes and Shipping Volumes. 
 
 ![Excel Descriptive Statistics](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_descriptive_statistics.png)
 
----
-
-
 
 ---
 
-## Power BI Dashboard
+## 🤝 Done!  Thank you for Reading
+For Project in SQL, click below:
+
+
+1. SQL Portfolio Link: https://github.com/peter28data/SQL
+
+2) Tableau Portfolio Link: https://github.com/peter28data/Tableau
+
+3) Python Portfolio Link: https://github.com/peter28data/Python
+
+4) Power BI Portfolio Link: https://github.com/peter28data/powerbi
+
+5) Data Modeling Link: https://github.com/peter28data/data-modeling
+
+6) Data Warehouse Link: https://github.com/peter28data/data-warehouse
+
 
 ---
 
-![customer dashboard powerbi](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/customer_dashboard_powerbi.png)
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=peter28data&" alt="peter28data" /></p>
+
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> </p>
+
 
 ---
 
-## Power BI Power Query
+## 📫 How to Connect With Me:
+
+🔗 Email: peter.garayrobles@gmail.com 
 
 ---
-
-![Power Query Power BI](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/power_query_powerbi.png)
-
----
-
-## Power BI Data Modeling
-
----
-
-![Power BI Data Modeling](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/data_modeling_powerbi.png)
-
----
-
