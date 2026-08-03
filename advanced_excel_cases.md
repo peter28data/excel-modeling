@@ -14,7 +14,7 @@ A Structured Suite of 10 Advanced Excel Functions Designed to Automate Data Clea
 
 ## 1. Excel FILTER Function
 
-Utilize to Extract UK-specific Records, Displaying a Dynamic Subset Containing Salesperson, Product, Boxes Shipped, and Financial Amount.
+7 Use-Cases to Utilize Dynamic Segmentation Based Location, Multiple Conditions, Customized Results, Aggregation, and Approximate Matching.
 
 - Filter by UK Region
 
@@ -26,6 +26,42 @@ Utilize to Extract UK-specific Records, Displaying a Dynamic Subset Containing S
 
 ![excel modeling result](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/excel_filter_result.png)
 
+- Filter by 2 Conditions
+
+The Asterisk (*) enables the Segmentation Tool to Filter 2 Conditions such as United States Clients in the Technology Industry.
+
+![filter and](https://github.com/peter28data/excel-modeling/blob/29ef3a7a27ac1c95c7bd5012d5aeda114aba0071/images_excel_modeling/v2/filter_excel_2conditions_and.png)
+
+- Filter by 2 Conditions
+
+The Addition (+) enables the Segmentation Tool to Filter for Clients that are Either from the United States Or in the Technology Industry.
+
+![filter or](https://github.com/peter28data/excel-modeling/blob/29ef3a7a27ac1c95c7bd5012d5aeda114aba0071/images_excel_modeling/v2/filter_excel_2conditions_or.png)
+
+- Filter with Headers
+
+The VSTACK Function Combines the original headers with Each Record Detail to make the Results of the Filter Legible.
+
+![filter vstack](https://github.com/peter28data/excel-modeling/blob/29ef3a7a27ac1c95c7bd5012d5aeda114aba0071/images_excel_modeling/v2/filter_excel_vstack_headers.png)
+
+- Filter with Choosing Columns
+
+To Concentrate on the Important Details of the Project, nested functions with the Filter tool enables the User to Choose important details such as Client Name, Industry, and Net Worth. Ignoring irrelevant data such as Indexing and Country.
+
+![filter choosecols](https://github.com/peter28data/excel-modeling/blob/29ef3a7a27ac1c95c7bd5012d5aeda114aba0071/images_excel_modeling/v2/filter_excel_vstack_choosecols.png)
+
+- Filter and Average Aggregation
+
+To Isolate Clients from the United States and Aggregate Financial Data.
+
+![filter average](https://github.com/peter28data/excel-modeling/blob/29ef3a7a27ac1c95c7bd5012d5aeda114aba0071/images_excel_modeling/v2/filter_excel_average_networth_americans.png)
+
+- Filter Subset of Family Clients
+
+A small group of Clients are from Families ("Bernaurd & Family"). An Approximate Match Tool such as SEARCH will provide a search bar for the User to Isolate Clients from Families. Additionally the ISNUMBER function will return True of False to combine with the Filter Function otherwise returning a Lookup error ("N/A") for clients without "Family".
+
+
+![filter isnumber search](https://github.com/peter28data/excel-modeling/blob/29ef3a7a27ac1c95c7bd5012d5aeda114aba0071/images_excel_modeling/v2/filter_excel_isnumber_search.png)
 
 ---
 
