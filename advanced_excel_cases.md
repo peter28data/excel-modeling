@@ -110,6 +110,14 @@ The Hash Operator (#) Dynamically adds New Data to Arrays whereas The New Data w
 
 ![counta with hash](https://github.com/peter28data/excel-modeling/blob/138127bb44dd9184f5803cc725516b9e005e8feb/images_excel_modeling/v2/counta_with_hashoperator.png)
 
+- Hash Operator with Dynamic Aggregation
+
+Although the Function is Dynamic the Cell Range is Limited. Adding a Hash Operator Enables the Function To Have a Dynamic Range.
+
+- Hash Operator with Nested Indexing
+
+The Frequency Function was counting all cells returned by the Filter Function. To isolate for The Client Names we nest the Index Function. 
+
 # 3b. Excel COUNTD Function
 
 
