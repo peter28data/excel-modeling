@@ -75,6 +75,10 @@ Utilize to Implement Automated Financial Aggregation By Region and Unique Produc
 
 ![Excel Sumifs](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_sumifs_function.png)
 
+
+
+
+
 ---
 
 ## 3. Excel COUNTIFS Function
@@ -84,6 +88,33 @@ Utilize to Segment Sales Record to Isolate Salesperson.
 - How many of those sales came from the Sales Person "Oby Sorrel"?
 
 ![Excel COUNTIF Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_countifs_function.png)
+
+# 3a. Excel COUNT Function
+
+Returns Frequency of Records Only if Containing Numerical Data. This can Be Useful if There are cells with empty spaces or other characters (_, N/A, etc).
+
+
+# 3a. Excel COUNTA Function
+
+Utilize to Return the Frequency of Array if not empty. Useful to compare how many cells are empty.
+
+In this Example, We use the Unique Function to List the Distinct Subjects from Student Test Records. Then we use the COUNTA Function to Calculate the Frequency of Distinct Subjects.
+
+However, if the Student Records are Updated and a New Subject is introduced, the Unique Function will display it as long as it is within the range But the Count Function will not Calculate the Frequency because it is outside the range, as shown below.
+
+![counta without](https://github.com/peter28data/excel-modeling/blob/138127bb44dd9184f5803cc725516b9e005e8feb/images_excel_modeling/v2/counta_without.png)
+
+- Dynamic Arrays with Hash Operator
+
+The Hash Operator (#) Dynamically adds New Data to Arrays whereas The New Data would be Excluded if Added after Cell Range was Implemented. 
+
+![counta with hash](https://github.com/peter28data/excel-modeling/blob/138127bb44dd9184f5803cc725516b9e005e8feb/images_excel_modeling/v2/counta_with_hashoperator.png)
+
+# 3b. Excel COUNTD Function
+
+
+
+---
 
 ---
 
@@ -155,6 +186,7 @@ Display Statistical Parameters for Amount Sold and Boxes Shipped such as Measure
 
 
 ---
+
 
 ## 🤝 Done!  Thank you for Reading
 For Project in SQL, click below:
