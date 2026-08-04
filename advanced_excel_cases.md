@@ -76,12 +76,25 @@ Utilize to Implement Automated Financial Aggregation By Region and Unique Produc
 ![Excel Sumifs](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_sumifs_function.png)
 
 
+- Dynamic Arrays in Tables
 
+A Spill Error occurs if we select the entire column inside a table.
 
+![wrong table dynamic array](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/wrong_table_dynamic_array.png)
+
+![spill error table array](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/spill_error_table_array.png)
+
+Tables have a fixed dynamic array in the Table, therefore, to overcome the Spill Error we select only one cell. 
+
+![correct table dynamic array](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/correct_table_dynamic_array.png)
+
+To use a Function on the Table
+1. Convert Table to Dynamic Array with Filter
+2. Use Hash Operator for Dynamic Insights
 
 ---
 
-## 3. Excel COUNTIFS Function
+ ## 3. Excel COUNTIFS Function
 
 Utilize to Segment Sales Record to Isolate Salesperson.
 
@@ -113,10 +126,26 @@ The Hash Operator (#) Dynamically adds New Data to Arrays whereas The New Data w
 - Hash Operator with Dynamic Aggregation
 
 Although the Function is Dynamic the Cell Range is Limited. Adding a Hash Operator Enables the Function To Have a Dynamic Range.
+![dynamic array filter table](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/dynamic_array_filter_table.png)
+
+![hash average aggregation](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/hash_average_aggregation.png)
+
+![counta wrong not needs index column](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/wrong_hash_counta.png)
+
 
 - Hash Operator with Nested Indexing
 
 The Frequency Function was counting all cells returned by the Filter Function. To isolate for The Client Names we nest the Index Function. 
+
+![correct hash counta index col](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/correct_hash_counta_indexcol1.png
+)
+
+
+- Hash Operator with Dynamic Dropdown
+
+Dropdown Menus can also be complemented with Hash Operators to Dynamically add new Records if the Dataset is Updated.
+
+![hash dynamic dropdown](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/excel_dynamic_dropdown.png)
 
 # 3b. Excel COUNTD Function
 
