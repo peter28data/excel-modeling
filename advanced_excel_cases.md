@@ -320,6 +320,9 @@ If we search the Employee name "Max" to Return the revenue using the xlookup fun
 
 ![ampersand_asterisk_wildcard](https://github.com/peter28data/excel-modeling/blob/f6204639eb5f89110b8150355a6feb84ad0c07bb/images_excel_modeling/v4/ampersand_asterisk_wildcard.png)
 
+To Make the xlookup function more robust for Use-Cases where we search for the last name we add the same Ampersand and Asterisk Operators as shown below.
+
+![ampersand_asterisk_start_end](https://github.com/peter28data/excel-modeling/blob/f0e9847416545ecb6afc7a2cc77db57007b27cb7/images_excel_modeling/v4/ampersand_asterisk_start_end.png)
 
 ---
 
