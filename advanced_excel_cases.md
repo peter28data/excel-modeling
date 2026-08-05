@@ -102,12 +102,15 @@ Utilize to Segment Sales Record to Isolate Salesperson.
 
 ![Excel COUNTIF Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_countifs_function.png)
 
-# 3a. Excel COUNT Function
+## 3a. Excel COUNT Function
 
 Returns Frequency of Records Only if Containing Numerical Data. This can Be Useful if There are cells with empty spaces or other characters (_, N/A, etc).
 
+## 3b. Excel Nested Count Function if Unique
 
-# 3a. Excel COUNTA Function
+=COUNTA(UNIQUE(A2:A5))
+
+## 3c. Excel COUNTA Function
 
 Utilize to Return the Frequency of Array if not empty. Useful to compare how many cells are empty.
 
@@ -147,11 +150,6 @@ Dropdown Menus can also be complemented with Hash Operators to Dynamically add n
 
 ![hash dynamic dropdown](https://github.com/peter28data/excel-modeling/blob/4249af4dbec8f8674fad188be6ea2a5974138e2d/images_excel_modeling/v3/excel_dynamic_dropdown.png)
 
-# 3b. Excel COUNTD Function
-
-
-
----
 
 ---
 
@@ -222,8 +220,109 @@ Display Statistical Parameters for Amount Sold and Boxes Shipped such as Measure
 ![Excel Descriptive Statistics](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_descriptive_statistics.png)
 
 
+
 ---
 
+11. Excel Dot Operator 
+
+To calculate the Profit, We select a Cell Range with Extra Empty Cells Selected if we want to Add New Figures in the future. The Profit column produced 0 for the rows where there is no current Data. 
+
+=C3:C12-D3:D12
+=C3:.C12-D3:.D12
+
+- Adding a Dot Operator Before the end of the Range for both cell ranges selected. The Zeros disappear.
+
+![excel dot operator]
+
+![dot operator vstack] 
+
+---
+
+12. Excel Apostrophe Operator
+
+Adding Indexing such as 0015 will be automatically populated as 15. 
+
+With an Apostrophe '0015 The index will be populated as 0015.
+
+- This can be Useful to show Formulas such as '=SUM(D3:D15)
+
+- Another Use-Case is when Ranges want to be displayed such as '1-5 Otherwise it will populate a different input.
+
+---
+
+13. Excel Space Operator
+
+Only sums the intersection of cell range.
+
+![excel space operator]
+
+To Find the Sum of both cell ranges a comma in between will produce the sum of both cell ranges.
+
+---
+
+14. Excel Asterisk Operator
+
+Find the Number of Gmail accounts from Client List.
+
+![wrong_asterisk_operator]
+
+We Return 0 results due to the count if function reading the "@gmail.com" as an exact match and emails are preceded with unique client identifiers.
+
+![correct asterisk operator]
+
+The Asterisk (*) Operator ignores the preceding characters for the Exact Match to Function correctly.
+
+![excel_apostrophe_before_after]
+
+Unlimited Number of Characters before and after "Anna" are returned when "*anna*" is inputed. 
+
+---
+
+15. Excel Question Mark Operator
+
+For Specified Number of Characters to Ignore when Search Matching.
+
+1 Question Mark = 1 Character Value
+
+![excel_question_mark]
+
+---
+
+16. Excel Tilda Operator
+
+If Searching for cells with the Question mark and the Input, putting a Tilda will enable the countif function to Return 2 for this range. Otherwise it will Return 10 as The Question Mark is an Operator for a single Character Search.
+
+![excel_tilda_operator](https://github.com/peter28data/excel-modeling/blob/f6204639eb5f89110b8150355a6feb84ad0c07bb/images_excel_modeling/v4/excel_tilda_operator.png)
+
+Some cells have "M?" and "?S" due to Human Error. To search for any cells containing the Question Mark either before the Size or After, an Asterisk Tilda and Question Mark followed by another Asterisk will Dynamically work with the countif function.
+
+![tilda_asterisk_question_mark](https://github.com/peter28data/excel-modeling/blob/f6204639eb5f89110b8150355a6feb84ad0c07bb/images_excel_modeling/v4/tilda_asterisk_question_mark.png)
+
+---
+
+17. Excel Dollar Sign Operator (Most Important)
+
+Implementing a Dollar Sign Operator will freeze a component of a cell range such as the Column or Row.
+
+![dollarsign_operator](https://github.com/peter28data/excel-modeling/blob/f6204639eb5f89110b8150355a6feb84ad0c07bb/images_excel_modeling/v4/dollarsign_operator.png)
+
+---
+
+18. Excel Ampersand (Most Versatile)
+
+Replaces a Formula such as Concatenate to combine a cell with the first name with an adjacent cell containing the last name.
+
+The concatenate function has a critical limitation when spaces cannot be included between the first and last name for a new cell.
+
+![ampersand_operator](https://github.com/peter28data/excel-modeling/blob/f6204639eb5f89110b8150355a6feb84ad0c07bb/images_excel_modeling/v4/ampersand_operator.png)
+
+If we search the Employee name "Max" to Return the revenue using the xlookup function it will return an error. This is because Max is recorded with a last name so it is not an Exact Match. This can be fixed with an Ampersand and Asterisk Operator as shown below while also selecting 2 for the "Wildcard" option in xlookup.
+
+![ampersand_asterisk_wildcard](https://github.com/peter28data/excel-modeling/blob/f6204639eb5f89110b8150355a6feb84ad0c07bb/images_excel_modeling/v4/ampersand_asterisk_wildcard.png)
+
+ctrl ) --- ??
+
+---
 
 ## 🤝 Done!  Thank you for Reading
 For Project in SQL, click below:
