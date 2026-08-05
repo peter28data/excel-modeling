@@ -232,9 +232,9 @@ To calculate the Profit, We select a Cell Range with Extra Empty Cells Selected 
 
 - Adding a Dot Operator Before the end of the Range for both cell ranges selected. The Zeros disappear.
 
-![excel dot operator]
+![excel dot operator](https://github.com/peter28data/excel-modeling/blob/821637ccda34485d1d43154fafdb6820a2718584/images_excel_modeling/v4/excel_dot_operator.png)
 
-![dot operator vstack] 
+![dot operator vstack](https://github.com/peter28data/excel-modeling/blob/821637ccda34485d1d43154fafdb6820a2718584/images_excel_modeling/v4/dot_operator_vstack.png)
 
 ---
 
@@ -254,7 +254,7 @@ With an Apostrophe '0015 The index will be populated as 0015.
 
 Only sums the intersection of cell range.
 
-![excel space operator]
+![excel space operator](https://github.com/peter28data/excel-modeling/blob/821637ccda34485d1d43154fafdb6820a2718584/images_excel_modeling/v4/excel_space_operator.png)
 
 To Find the Sum of both cell ranges a comma in between will produce the sum of both cell ranges.
 
@@ -264,15 +264,15 @@ To Find the Sum of both cell ranges a comma in between will produce the sum of b
 
 Find the Number of Gmail accounts from Client List.
 
-![wrong_asterisk_operator]
+![wrong_asterisk_operator](https://github.com/peter28data/excel-modeling/blob/821637ccda34485d1d43154fafdb6820a2718584/images_excel_modeling/v4/wrong_asterisk_operator.png)
 
 We Return 0 results due to the count if function reading the "@gmail.com" as an exact match and emails are preceded with unique client identifiers.
 
-![correct asterisk operator]
+![correct asterisk operator](https://github.com/peter28data/excel-modeling/blob/821637ccda34485d1d43154fafdb6820a2718584/images_excel_modeling/v4/correct_asterisk_operator.png)
 
 The Asterisk (*) Operator ignores the preceding characters for the Exact Match to Function correctly.
 
-![excel_apostrophe_before_after]
+![excel_apostrophe_before_after](https://github.com/peter28data/excel-modeling/blob/821637ccda34485d1d43154fafdb6820a2718584/images_excel_modeling/v4/excel_apostrophe_before_after.png)
 
 Unlimited Number of Characters before and after "Anna" are returned when "*anna*" is inputed. 
 
@@ -284,7 +284,7 @@ For Specified Number of Characters to Ignore when Search Matching.
 
 1 Question Mark = 1 Character Value
 
-![excel_question_mark]
+![excel_question_mark](https://github.com/peter28data/excel-modeling/blob/821637ccda34485d1d43154fafdb6820a2718584/images_excel_modeling/v4/excel_question_mark.png)
 
 ---
 
@@ -320,7 +320,6 @@ If we search the Employee name "Max" to Return the revenue using the xlookup fun
 
 ![ampersand_asterisk_wildcard](https://github.com/peter28data/excel-modeling/blob/f6204639eb5f89110b8150355a6feb84ad0c07bb/images_excel_modeling/v4/ampersand_asterisk_wildcard.png)
 
-ctrl ) --- ??
 
 ---
 
