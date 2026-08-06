@@ -326,6 +326,38 @@ To Make the xlookup function more robust for Use-Cases where we search for the l
 
 ---
 
+# 19. Double Dash Operator
+
+Remove dollar sign manually recorded with revenue transactions. The delimiter in this case is the ($).
+
+=TEXTAFTER
+
+![textafter data cleaning](
+
+The dollar sign is removed but the Data Type is still Text Data. The effect is that Numeric Functions such as =SUM and =MAX return a zero value. 
+
+![wrong textafter sum max](
+
+The Double Dash Operator Turns the Text Data to Numeric Data by applying a double negative sign to produce a positive value, as shown below.
+
+![correct_textafter_sum_max](
+
+Another Use Case for the Double Dash Operator is for converting True or False Results to Binary Code. This can be useful when we use the WEEKDAY function to convert calendar dates to 1-7 to represent days of the week. The Goal is to Take a Frequency count of recorded calendar dates that fall on 6 or 7 since they represent the Weekend as Saturday or Sunday. 
+
+This is Useful for scheduling to avoid setting meetings for the weekend. 
+
+![weekday_number](
+
+1. We isolate weekend dates with this function =WEEKDAY(B3:B12,2)>5
+
+2. Convert to Binary using the Double Dash Operator =--WEEKDAY(B3:B12,2)>5
+
+![weekday_binary](
+
+4. Implement the SUMPRODUCT Function to Return the total number of Dates
+
+---
+
 ## 🤝 Done!  Thank you for Reading
 For Project in SQL, click below:
 
