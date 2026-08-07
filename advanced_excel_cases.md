@@ -332,29 +332,91 @@ Remove dollar sign manually recorded with revenue transactions. The delimiter in
 
 =TEXTAFTER
 
-![textafter data cleaning](
+![textafter data cleaning](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/textafter_data_cleaning.png)
 
 The dollar sign is removed but the Data Type is still Text Data. The effect is that Numeric Functions such as =SUM and =MAX return a zero value. 
 
-![wrong textafter sum max](
+![wrong textafter sum max](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/wrong_textafter_sum_max.png)
 
 The Double Dash Operator Turns the Text Data to Numeric Data by applying a double negative sign to produce a positive value, as shown below.
 
-![correct_textafter_sum_max](
+![correct_textafter_sum_max](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/correct_textafter_sum_max.png)
+
+
+## Double Dash Investigating Potential Schedule Conflicts
 
 Another Use Case for the Double Dash Operator is for converting True or False Results to Binary Code. This can be useful when we use the WEEKDAY function to convert calendar dates to 1-7 to represent days of the week. The Goal is to Take a Frequency count of recorded calendar dates that fall on 6 or 7 since they represent the Weekend as Saturday or Sunday. 
 
 This is Useful for scheduling to avoid setting meetings for the weekend. 
 
-![weekday_number](
+1. Use WEEKDAY Function to convert Calendar Dates to Numbered Days of the Week
 
-1. We isolate weekend dates with this function =WEEKDAY(B3:B12,2)>5
+![weekday_number](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/weekday_number.png)
 
-2. Convert to Binary using the Double Dash Operator =--WEEKDAY(B3:B12,2)>5
+2. We isolate weekend dates with this function =WEEKDAY(B3:B12,2)>5 To Return True or False
 
-![weekday_binary](
+![weekday_true_false](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/weekday_true_false.png)
+
+3. Implement Double Dash Operator to Convert to Binary =--WEEKDAY(B3:B12,2)>5
+
+![weekday_binary](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/weekday_binary.png)
 
 4. Implement the SUMPRODUCT Function to Return the total number of Dates
+
+![sumproduct_doubledash_weekday](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/sumproduct_doubledash_weekday.png)
+
+## Phone Number Validation
+
+Some manual recording may have more or less than 9 digits. Find the Proportion of mistakes made from recording.
+
+1. Implement =LEN Function to calculate the number of characters in a text string.
+
+![len_phone_number](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/len_phone_number.png)
+
+2. Modify Function to Return True or False if Cell is not equal to 9 characters with =LEN(B3:B17)<>9
+
+3. Implement Double Dash Operator to turn True or False into Binary Code
+
+4. Nest SUMPRODUCT Function to Return Total number of Phone Numbers Recorded that are not 9 digits =SUMPRODUCT(--(LEN(B3:B17)<>9))
+
+![sumproduct_len_not_9](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/sumproduct_len_not_9.png)
+
+5. Calculate Proportion by Dividing by Total Number of Phone Numbers Recorded using COUNT Function.
+
+
+## HR Multiple Criteria Segmentation and Proportion
+
+HR has conducted Training on Interns and received reports from their managers. The Report is in True or False Markers for each Employee. 
+
+1. Using Logic Statement such as =(C3:C9=TRUE),(D3:D9=TRUE) This will return a True or False if The employee has completed training and a practice doc on that training to evaluate the new hire performance. 
+
+2. Implement Double Dash Operator to convert TRUE OR FALSE evaluations to binary code.
+
+3. Implement SUMPRODUCT to summarize the total number of employees that passed training and practice doc.
+
+![sumproduct_doubledash_multiple_criteria](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/sumproduct_doubledash_multiple_criteria.png)
+
+4. Find Proportion by dividing by Total number of Employees for the Report.
+
+## Budget Projection for Overtime Costs
+
+An HR manager requires assistance calculating overtime costs for the past the past weekend for the sales division
+
+1. Implement a logical statement to confirm employee is from sales division =(C3:C9="Sales")
+
+2. Supplement Statement with criteria such as True for working the weekend =(C3:C9="Sales"),(D3:D9=TRUE)
+
+3. Convert Result from TRUE OR FALSE to Binary Code with Double Dash Operator =--(C3:C9="Sales"),--(D3:D9=TRUE)
+
+4. Implement SUMPRODUCT
+
+![otcost_sumproduct_doubledash_multiplecriteria](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/otcost_sumproduct_doubledash_multiplecriteria.png)
+
+5. Add Arrays to Calculate the Overtime Hourly Rate and Number of Hours worked on the Weekend
+
+![otcost_sumproduct_doubledash_multiplecriteria_multiplication](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/otcost_sumproduct_doubledash_multiplecriteria_multiplication.png)
+
+![complete_otcost_sumproduct](https://github.com/peter28data/excel-modeling/blob/78a63dd889cd9095119eacd2aa36bdfc169bdcd0/images_excel_modeling/v5/complete_otcost_sumproduct.png)
 
 ---
 
