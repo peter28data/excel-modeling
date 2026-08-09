@@ -2,121 +2,33 @@
 
 <h3 align="center">A Data Engineer in SQL and Excel. </h3>
 
-----
-
-
-## Excel Data Pipeline & Analytics Framework
-
-A Structured Suite of 10 Advanced Excel Functions Designed to Automate Data Cleaning, Deduplicate Records, and Summarize KPI's by Region Dynamically.
-
-
 ---
 
-## 1. Excel FILTER Function
+## Excel
 
-Utilize to Extract UK-specific Records, Displaying a Dynamic Subset Containing Salesperson, Product, Boxes Shipped, and Financial Amount.
+Goal: Investigate the toal Player count for each Baseball player from 2025 MLB.
 
-- Filter by UK Region
+Challenge: Players can qualify for multiple positions in a given season and need to be counted towards each of them.
 
----
+1. Find the Unique List of Positions available from dataset. Since positions are combined in the same cell, we will combine the entirety of the column in one cell with TEXTJOIN.
 
-![excel filter function](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/excel_filter_function.png)
+2. Split the contents of the Cell across Rows with the Delimiter "/" with TEXTSPLIT.
 
-- Result of FILTER Function
+![textsplit_textjoin](https://github.com/peter28data/excel-modeling/blob/231893ce0f9f30aff00bc31526a7bd643dd52f9c/images_excel_modeling/v6/textsplit_textjoin.png)
 
-![excel modeling result](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/excel_filter_result.png)
+3. Implement the UNIQUE Function to Return Distinct Baseball positions from spreadsheet.
 
+![unique_textsplit_textjoin](https://github.com/peter28data/excel-modeling/blob/231893ce0f9f30aff00bc31526a7bd643dd52f9c/images_excel_modeling/v6/unique_textsplit_textjoin.png)
 
----
+4. Utilize COUNTIFS to initially see how many players qualified for this position.
 
-## 2. Excel SUMIFS Function
+![wrong_countifs](https://github.com/peter28data/excel-modeling/blob/231893ce0f9f30aff00bc31526a7bd643dd52f9c/images_excel_modeling/v6/wrong_countifs.png)
 
-Utilize to Implement Automated Financial Aggregation By Region and Unique Product.
+Senior Analyst Perspective: The OF position displays 193 player count but does not account for players who qualify for OF and other positions. To Fix this Issue we implement Wildcard characters into the Criteria component of COUNTIFS. 
 
-- Find The Total Sales in the U.K. for Eclairs Product.
+![correct_countifs](https://github.com/peter28data/excel-modeling/blob/231893ce0f9f30aff00bc31526a7bd643dd52f9c/images_excel_modeling/v6/correct_countifs.png)
 
----
-
-![Excel Sumifs](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_sumifs_function.png)
-
----
-
-## 3. Excel COUNTIFS Function
-
-Utilize to Segment Sales Record to Isolate Salesperson.
-
-- How many of those sales came from the Sales Person "Oby Sorrel"?
-
-![Excel COUNTIF Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_countifs_function.png)
-
----
-
-## 4. Excel XLOOKUP Function
-
-Utilize for Dynamic Indexing and Retrieval.
-
-- Return Matching Product Identifier Based on Product Details
-
-![excel xlookup function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_xlookup_function_v1.png)
-
----
-
-## 5. Excel UNIQUE Function
-
-Utilize to Eliminate Redundant Transaction IDs to isolate distinct Customer Records. The system Performs Automated Data Deduplication.
-
--Remove Duplicates to Find Unique Customers or Products.
-
-![Excel Unique Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_unique_function.png)
-
----
-
-## 6. Excel SORT Function
-
-Utilize to Dynamically Sort Records in Ascending Alphabetical Order by Client Surname
-
--Arrange Data by Category.
-
-![Excel SORT Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_sort_function.png)
-
-![Excel SORT Result](https://github.com/peter28data/excel-modeling/blob/1cc0eef2594347b6267b812eaeed5728c2dd59a0/images_excel_modeling/v1/excel_sort_result.png)
-
----
-
-## 7. Excel PROPER Function
-
-Utilize to Standardize Capitalization for Client Lists.
-
-![Excel Proper Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_proper_function.png)
-
-![Excel Proper Result](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_proper_result.png)
-
----
-
-## 8. Excel LET Function
-
-Implement Automated Summary reporting the Total Financial Performance of the UK Region and Average Order Size.
-
-![Excel LET Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_let_function.png)
-
----
-
-## 9. Excel IFS Function
-
-To Evaluate Box Volumes Shipped, The IFS function is utilized for Multi-Conditional Classification.
-
-Good for Labeling Performance of Customer or Employee Records.
-
-![Excel IFS Function](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_ifs_function.png)
-
----
-
-# 10. Excel Descriptive Statistics
-
-Display Statistical Parameters for Amount Sold and Boxes Shipped such as Measures of Central Tendency (Mean & Median), Spread (Standard Deviation, Variance, Min & Max Range) To Measure Volatility of Sales Sizes and Shipping Volumes. 
-
-![Excel Descriptive Statistics](https://github.com/peter28data/excel-modeling/blob/2efbee4cca62b8a2435e08bc25195976565a8e2d/images_excel_modeling/v1/excel_descriptive_statistics.png)
-
+Note: OF position displays 294, a 52% increase over our initial count after applying robust updates to our COUNTIFS Formula. 
 
 ---
 
