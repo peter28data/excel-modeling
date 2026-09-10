@@ -19,13 +19,13 @@ A Structured Suite of 10 Advanced Excel Functions Designed to Automate Data Clea
 
 Utilize to Extract UK-specific Records, Displaying a Dynamic Subset Containing Salesperson, Product, Boxes Shipped, and Financial Amount.
 
-- Filter by UK Region
+a) Filter by UK Region
 
 ---
 
 ![excel filter function](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/excel_filter_function.png)
 
-- Result of FILTER Function
+b) Result of FILTER Function
 
 ![excel modeling result](https://github.com/peter28data/excel-modeling/blob/7f5c1c2a28c8b0a66befcc427e74ac5bd302cf7b/images_excel_modeling/excel_filter_result.png)
 
